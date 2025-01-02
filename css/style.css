@@ -1,1 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;    
+}
+
+.header-bg {
+     background-color: black;
+ 
+    }
+
+.header-menu {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     color: beige;
+     margin: 0px;
+    
+      justify-content:space-between;
+
+
+
+    }
+
+    .header-menu h1, h2 { 
+          padding: 0px;
+          margin: 0px;
+    }   
+
+
+
 
