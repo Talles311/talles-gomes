@@ -13,17 +13,18 @@ body {
      grid-template-columns: 1fr 1fr;
      color: beige;
      margin: 0px;
+     justify-content: space-around;
     
-      justify-content:space-between;
-
-
+     padding: 20px 20px 0px 20px;
 
     }
 
-    .header-menu h1, h2 { 
-          padding: 0px;
-          margin: 0px;
-    }   
+    .header-menu h1, h2  {
+               text-align: end;
+               grid-column: 2;
+
+    }
+
 
 
 
