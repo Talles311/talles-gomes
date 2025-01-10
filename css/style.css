@@ -1,29 +1,4 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;    
-}
 
-.header-bg {
-     background-color: black;
- 
-    }
-
-.header-menu {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     color: beige;
-     margin: 0px;
-     justify-content: space-around;
-    
-     padding: 20px 20px 0px 20px;
-
-    }
-
-    .header-menu h1, h2  {
-               text-align: end;
-               grid-column: 2;
-
-    }
 
 
 
