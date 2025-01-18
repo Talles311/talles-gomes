@@ -25,10 +25,8 @@ a {
 img {
    max-width: 100%;
    display: block;
-   margin-bottom: 10px;
    border-radius: 4px;
-   
-
+   margin-bottom: 5px;
 }
 
 .header-bg {
@@ -91,13 +89,32 @@ img {
 
 }
 
-.fotos {
-     column-count: 3;
-     padding: 30px;
-     gap: 20px;
-     
+.corpo {
+      max-width: 1440px;
+      margin: 0 auto;
+
 }
 
+
+
+.fotos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      padding-top: 20px;
+      align-items: center;
+      color: rgb(225, 225, 225);
+       
+}
+
+.fotos a { 
+    color: white;
+    font-weight: 500px;
+    font-size: 8px;
+    text-align: right;
+   
+ }
+  
 
 
 
