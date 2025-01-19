@@ -1,5 +1,6 @@
 
 body {
+   height: 100vh; 
    margin: 0px;
    font-family: Arial, Helvetica, sans-serif;
 }
@@ -90,6 +91,7 @@ img {
 }
 
 .corpo {
+      
       max-width: 1440px;
       margin: 0 auto;
 }
@@ -97,7 +99,7 @@ img {
 
 
 .fotos {
-     column-count: 3;
+      column-count: 3;
       gap: 20px;
       padding-top: 20px;
       align-items: center;
@@ -110,9 +112,13 @@ img {
     font-weight: 500px;
     font-size: 10px;
     text-align: right;
-
- 
    }
+
+.fotos-hor {
+       
+   
+
+}   
   
 
 
