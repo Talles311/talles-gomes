@@ -97,6 +97,14 @@ img {
 }
 
 
+.fotos-img {
+   cursor: pointer;
+   transition: transform 0.2s;
+
+}
+
+
+
 
 .fotos {
       column-count: 3;
@@ -108,14 +116,12 @@ img {
        
 }
 
-   .fotos p {
+.fotos p {
          
          color: white;
          font-weight: 500px;
          font-size: 10px;
          margin: 0px;
-         
-
    }
 
 .fotos-hor {
@@ -129,9 +135,35 @@ img {
 }
 
 
-  
 
 
+
+#overlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.9);
+   justify-content: center;
+   align-items: center;
+}
+
+#expanded-img {
+   max-width: 90%;
+   max-height: 90%;
+   display: block;
+}
+
+#close-btn {
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   color: white;
+   font-size: 40px;
+   cursor: pointer;
+}
 
 
 
