@@ -28,7 +28,6 @@ img {
    border-radius: 4px;
    margin-bottom: 5px;
    cursor: pointer;
-
 }
 
 .header-bg {
@@ -51,6 +50,8 @@ img {
    display: flex;
    gap: 10px;
 }
+
+/*-----------------------------------------------------------------------------*/
 
 /* Configuração a */
 
@@ -79,7 +80,7 @@ img {
    left: 0;  /* Move para a esquerda */
 }
 
-
+/*-----------------------------------------------------------------------------------*/
 
 /*corpo*/
 
@@ -109,35 +110,7 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*-------------------------------------------------------------------------------*/
 
 /*Configurações do slide*/
 
@@ -178,17 +151,26 @@ img {
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
-   background: rgba(255, 255, 255, 0.3);
+   background: rgba(255, 255, 255, 0);
    color: white;
    border: none;
    padding: 10px 15px;
    font-size: 30px;
    cursor: pointer;
+   margin-left: 100px;
+   margin-right: 100px;
 }
 
-#prev-btn { left: 10px; }
-#next-btn { right: 10px; }
+#prev-btn:hover, #next-btn:hover {              
+   font-size: 40px;
+   transition: 0.3s;
+}  
+
+#prev-btn { left: 8px; }
+#next-btn { right: 8px; }
 
 #prev-btn:hover, #next-btn:hover {
-   background: rgba(255, 255, 255, 0.6);
+   background: rgba(255, 255, 255, 0.089);
+   border-radius: 10px;
+   
 }
