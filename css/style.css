@@ -88,7 +88,7 @@ img {
    background-color: rgba(0, 0, 0, 0.87);
 }
 
-.fotos {
+.fotos-index {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    gap: 15px;
