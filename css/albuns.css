@@ -5,7 +5,6 @@ body {
    background-color: #f4f4f4;
  }
  
-
  ul {
    list-style: none;
    padding: 0;
@@ -28,7 +27,6 @@ img {
    margin-bottom: 5px;
    cursor: pointer;
 }
-
 
 
 /*configuração header albun*/
@@ -59,7 +57,7 @@ img {
 /* Configuração a */
 
 .header-menu a {
-   position: relative; /* Necessário para o ::after */
+   position: relative;
    display: inline-block;
    padding: 5px 0;
    color: black;
@@ -70,34 +68,33 @@ img {
 .header-menu a::after {
    content: "";
    position: absolute;
-   left: 50%;  /* Começa no meio */
+   left: 50%;
    bottom: 0;
-   width: 0;  /* Começa sem largura */
+   width: 0;
    height: 2px;
    background-color: black;
    transition: width 0.4s ease, left 0.4s ease;
 }
 
 .header-menu a:hover::after {
-   width: 100%;  /* Expande até o tamanho total */
-   left: 0;  /* Move para a esquerda */
+   width: 100%;
+   left: 0;
 }
 
- /* Estilo do conteúdo do card (relacionado à página de álbuns) */
+/* Estilo dos álbuns */
 .album-container {
    display: grid;
-   grid-template-columns: 1fr ; /* Apenas uma coluna para os cards */
+   grid-template-columns: 1fr 1fr;
    gap: 20px;
    padding: 30px;
    justify-content: center;
  }
  
- /* Cada card vai ocupar a largura total possível */
- .album-card {
-   display: grid; /* Usando grid  */
-   grid-template-columns: 1fr 1fr; /* A imagem à esquerda e o texto à direita */
-   align-items: center; /* Alinhar os itens verticalmente */
-   gap: 20px; /* Espaço entre a imagem e o texto */
+.album-card {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   gap: 20px;
    background-color: #fff;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    border-radius: 8px;
@@ -105,49 +102,73 @@ img {
    cursor: pointer;
    transition: transform 0.3s ease;
    padding: 15px;
-   width: 100%; /* Faz o card ocupar toda a largura do container */
-   max-width: 100%; /* Garante que o card ocupe 100% da largura */
-  
+   width: 100%;
+   max-width: 100%;
  }
  
- .album-card:hover {
-   transform: translatex(-1.5px);
+.album-card:hover {
+   transform: translateX(-1.5px);
  }
  
- .album-img {
-   width: 600px; /* Tamanho fixo para a imagem */
-   height: auto; /* Tamanho fixo para a imagem */
+.album-img {
+   width: 600px;
+   height: auto;
+   margin: auto;
    overflow: hidden;
    border-radius: 2px;
  }
  
- .album-img img {
+.album-img img {
    width: 100%;
    height: 100%;
    object-fit: cover;
    border-radius: 4px;
    transition: opacity 0.3s ease;
- }
+}
 
-
- .album-text {
-   flex-grow: 1; /* Faz o texto ocupar o espaço restante */
+.album-text {
+   flex-grow: 1;
    display: flex;
-   flex-direction: column; /* Organiza o texto em coluna */
-   justify-content: center; /* Centraliza o texto verticalmente */
- }
+   flex-direction: column;
+   justify-content: center;
+}
  
- .album-text h2 {
+.album-text h2 {
    margin-bottom: 10px;
    font-size: 1.2rem;
- }
+}
  
- .album-text p {
+.album-text p {
    font-size: 0.9rem;
    color: #555;
- }
- 
+}
 
+/* Responsividade */
+@media (max-width: 768px) {
+   .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+   .header-menu {
+      flex-direction: column;
+      gap: 5px;
+   }
+
+   .album-container {
+      grid-template-columns: 1fr;
+   }
+
+   .album-card {
+      grid-template-columns: 1fr;
+      text-align: center;
+   }
+
+   .album-img {
+      width: 100%;
+   }
+} 
 
 /*Configurações do slide*/
 
@@ -198,7 +219,7 @@ img {
    margin-right: 100px;
 }
 
-#prev-btn:hover, #next-btn:hover {              
+#prev-btn:hover, #next-btn:hover {
    font-size: 40px;
    transition: 0.3s;
 }  
@@ -209,5 +230,4 @@ img {
 #prev-btn:hover, #next-btn:hover {
    background: rgba(255, 255, 255, 0.089);
    border-radius: 10px;
-   
 }
