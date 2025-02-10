@@ -3,6 +3,7 @@ body {
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
    background-color: #f4f4f4;
+   padding: 0 15px; /* Adicionando padding lateral para alinhamento */
  }
  
  ul {
@@ -41,6 +42,8 @@ img {
    padding: 20px;
    gap: 20px;
    align-items: end;
+   max-width: 1200px;
+   margin: 0 auto;
 }
 
 .header h1 {
@@ -88,6 +91,8 @@ img {
    gap: 20px;
    padding: 30px;
    justify-content: center;
+   max-width: 1200px;
+   margin: 0 auto;
  }
  
 .album-card {
@@ -145,6 +150,10 @@ img {
 
 /* Responsividade */
 @media (max-width: 768px) {
+   body {
+      padding: 0 10px;
+   }
+
    .header {
       flex-direction: column;
       align-items: center;
