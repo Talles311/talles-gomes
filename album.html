@@ -3,106 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Talles Gomes</title>
-  <link rel="stylesheet" href="css/style.css">
-
+  <title>Álbuns - Talles Gomes</title>
+  <link rel="stylesheet" href="css/albuns.css">
 </head>
 <body>
-       
-       <header class="header-bg">
-             <div class="header container">
-               <a href="index.html">
-                   <h1>Talles Gomes</h1>
-               </a>
-                 <nav aria-label="primaria" >
-                    <ul class="header-menu">
-                      <li><a href="#">Albuns</a></li>
-                      <li><a href="#">Sobre</a></li>
-                    </ul>
-                </nav>
-             </div>    
-      </header>
+  <header class="header-bg">
+    <div class="header container">
+      <a href="index.html"><h1>Talles Gomes</h1></a>
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a href="album.html">Álbuns</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>    
+  </header>
 
-    
-    <main class="corpo-bg">
-           <div class="corpo">
-                 <div class="albuns">
+  <main class="album-bg">
+    <div class="album-container">
+      <!-- Card 1 -->
+      
+      <div class="album-card" data-group="grupo1">
+        <div class="album-img" data-group="grupo1">
+          <img src="img/fotos/002234_002234-R1-E001_1.jpg" alt="Foto do Álbum 1" class="album-slide-img">
+        </div>
+        <div class="album-text">
+          <h2>Álbum 1</h2>
+          <p>Descrição do Álbum 1.</p>
+        </div>
+      </div>
 
-                     
-                         
-                         <div class="fotos-hor"><img src="img/fotos/002234_002234-R1-E001_1.jpg" class="fotos-img" data-group="grupo1" alt="foto">
-                              <p># 24269</p>
-                         </div>
-                    
+      <!-- Card 2 -->
+      <div class="album-card" data-group="grupo2">
+        <div class="album-img" data-group="grupo2">
+          <img src="img/IMG_2207-Aprimorado-NR.jpg" alt="Foto do Álbum 2" class="album-slide-img">
+        </div>
+        <div class="album-text">
+          <h2>Álbum 2</h2>
+          <p>Descrição do Álbum 2.</p>
+        </div>
+      </div>
 
-                      <div class="fotos-hor"><img src="img/fotos/IMG_2207-Aprimorado-NR.jpg" class="fotos-img" alt="foto">
-                           <p># 24222</p>
-                      </div>
+      <!-- Card 3 -->
+      <div class="album-card" data-group="grupo3">
+        <div class="album-img" data-group="grupo3">
+          <img src="img/IMG_0676.jpg" alt="Foto do Álbum 3" class="album-slide-img">
+        </div>
+        <div class="album-text">
+          <h2>Álbum 3</h2>
+          <p>Descrição do Álbum 3.</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
-                      <div class="fotos-hor"><img src="img/fotos/IMG_0354.jpg" class="fotos-img" alt="foto">
-                           <p># 24273</p>
-                      </div>
-
-                      <div class="fotos-vert1"><img src="img/fotos/IMG_4678.jpg" class="fotos-img" alt="foto">
-                         <p># 2422</p>
-                    </div>
-                     
-                      <div class="fotos-hor"><img src="img/fotos/IMG_0361.jpg" class="fotos-img" alt="foto">
-                           <p># 24274</p>
-                      </div>
-                     
-                      <div class="fotos-hor"><img src="img/fotos/IMG_0489.jpg" class="fotos-img" alt="foto">
-                           <p># 24275</p>
-                      </div>
-                     
-                      <div class="fotos-hor"><img src="img/fotos/IMG_0676.jpg" class="fotos-img" alt="foto">
-                           <p># 24276</p>
-                      </div>
-                      
-                      <div class="fotos-hor"><img src="img/fotos/IMG_0750.jpg" class="fotos-img" alt="foto">
-                           <p># 24277</p>
-                      </div>
-                      
-                      <div class="fotos-hor"><img src="img/fotos/IMG_1652.jpg"  class="fotos-img" alt="foto">
-                           <p># 24278</p>
-                      </div>
-                     
-                      <div class="fotos-hor"><img src="img/fotos/IMG_1759.jpg"  class="fotos-img"alt="foto">
-                           <p># 24279</p>
-                      </div>
-                     
-                      <div class="fotos-hor"><img src="img/fotos/IMG_1772.jpg" class="fotos-img" alt="foto">
-                           <p># 24280</p>
-                      </div>
-                     
-                      <div class="fotos-hor"><img src="img/fotos/IMG_2108.jpg" class="fotos-img" alt="foto">
-                           <p># 24281</p>
-                      </div>
-                     
-                      <div class="fotos-vert2"><img src="img/fotos/IMG_4521.jpg" class="fotos-img" alt="foto">
-                           <p># 24282</p>
-                      </div>
-
-                      <div class="fotos-vert3"><img src="img/fotos/IMG_0257.jpg" class="fotos-img" alt="foto">
-                         <p># 24272</p>
-                    </div>
-
-               </div>
-          </div>
-
-         
-</main>
-
-<div id="overlay">
-     <span id="close-btn">&times;</span>
-     <button id="prev-btn">&#10094;</button>
-     <img id="expanded-img">
-     <button id="next-btn">&#10095;</button>
- </div>
- 
-
-
-    <script src="script.js"></script>
-
+  <script src="script-albuns.js"></script>
 </body>
 </html>
