@@ -152,16 +152,21 @@ img {
 @media (max-width: 768px) {
    body {
       padding: 0 10px;
+      margin: 0 auto;
    }
 
    .header {
-      flex-direction: column;
+      
       align-items: center;
       text-align: center;
    }
 
+   .header a h1 {
+         font-size: 1.2rem;  
+   }
+
    .header-menu {
-      flex-direction: column;
+      flex-direction: row;
       gap: 5px;
    }
 
