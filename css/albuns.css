@@ -103,9 +103,13 @@ img {
  
 .album-card {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
    align-items: start;
    justify-items: end;
+   
+   align-items: start;
+   justify-items: start ;
+   
    gap: 20px;
    background-color: #fff;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -117,6 +121,7 @@ img {
    margin: 0 0;
    height: 400px;
 }
+
  
 .album-card:hover {
    transform: translateX(-1.5px);
@@ -152,42 +157,60 @@ img {
  
 .album-text p {
    font-size: 0.9rem;
-   color: #555;
+   color: #636363;
 }
 
+
+
+
+
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
    body {
-      margin: 0 auto;
+      padding: 0px;
+      margin: 0px ;
    }
 
    .header {
+      display: flex;
+      flex-direction: column; 
+      
+      
       align-items: center;
-      text-align: center;
+      margin: 0 auto;
+      
    }
 
    .header h1 {
-         padding-left: 20px;
+         padding-left: 10px;
          font-size: 1.5rem;  
    }
 
    .header-menu {
       flex-direction: row;
       gap: 5px;
+      flex-wrap: wrap;
    }
 
    .album-container {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
    }
 
    .album-card {
-      grid-template-columns: 1fr;
-      text-align: center;
+       display: flex;
+       flex-direction: column;
+       
+      
+       
+       justify-items: center ;
+       align-items: center;
+       margin: 0 auto;
+      
    }
 
-   .album-img {
-      width: 100%;
-   }
+
 } 
 
 
