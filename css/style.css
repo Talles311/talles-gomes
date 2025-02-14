@@ -130,32 +130,7 @@ img {
 
 /* Ajustes para telas com largura até 768px */
 
-@media screen and (max-width: 400px) {
-   .header {
-      align-items: center;  
-      
-      justify-content: center;
-      
-  }
 
-  .header h1 {
-        align-self: center;
-        text-align: center;
-        font-size: 1.3rem;
-
-  }
-
-   .header-menu {
-       
-    display: flex;
-    flex-wrap: wrap;
-    
-    gap: 5px;
-
-   }
- 
-
-}
 
 @media screen and (max-width: 768px) {
   
@@ -190,6 +165,30 @@ img {
    }
  }
 
+/* Ajustes para telas com largura até 400px */
+
+ @media screen and (max-width: 400px) {
+   .header {
+      align-items: center;  
+      justify-content: center;
+  }
+
+  .header h1 {
+        align-self: center;
+        text-align: center;
+        font-size: 1.3rem;
+  }
+
+   .header-menu {
+       
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 5px;
+
+   }
+ 
+}
 
 
 
