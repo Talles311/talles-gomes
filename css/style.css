@@ -121,6 +121,37 @@ img {
 }
 
 
+/* Ajustes para telas com largura até 768px */
+@media screen and (max-width: 768px) {
+   .corpo-index {
+     padding: 10px;
+   }
+ 
+   .fotos-index {
+     /* Caso prefiras que as fotos fiquem em uma única coluna */
+     grid-template-columns: 1fr;
+     gap: 10px;
+   }
+   
+   /* Se desejares que algumas fotos se alinhem de forma diferente,
+      podes ajustar classes específicas */
+   .fotos-hor,
+   .fotos-vert1 {
+     width: 100%;
+     margin: 0 auto;
+     text-align: center;
+   }
+   
+   .fotos-hor p,
+   .fotos-vert1 p {
+     font-size: 14px;
+   }
+ }
+
+
+
+
+
 /*-------------------------------------------------------------------------------*/
 
 /*Configurações do slide*/
