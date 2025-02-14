@@ -2,9 +2,11 @@
 /*configurações gerais*/
 
 body {
-   height: 100vh;
-   margin: 0;
+   padding: 0px;
+   margin: 0 auto;
    font-family: Arial, Helvetica, sans-serif;
+   height: 100vh;
+
 }
 
 ul {
@@ -31,6 +33,8 @@ img {
 }
 
 
+
+
 /*configuração header*/
 
 .header-bg {
@@ -39,9 +43,10 @@ img {
 
 .header {
    display: flex;
+   flex-wrap: wrap;
    background-color: #e9e9e9;
    padding: 20px 10px 20px 10px;
-   gap: 20px;
+   gap: 8px;
    align-items: flex-end;
    font-weight: normal;
    box-sizing: border-box;
@@ -55,6 +60,8 @@ img {
 
 .header-menu {
    display: flex;
+   flex-wrap: wrap;
+   
    gap: 10px;
 }
 
@@ -122,15 +129,50 @@ img {
 
 
 /* Ajustes para telas com largura até 768px */
-@media screen and (max-width: 768px) {
-   .corpo-index {
-     padding: 10px;
+
+@media screen and (max-width: 400px) {
+   .header {
+      align-items: center;  
+      
+      justify-content: center;
+      
+  }
+
+  .header h1 {
+        align-self: center;
+        text-align: center;
+        font-size: 1.3rem;
+
+  }
+
+   .header-menu {
+       
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 5px;
+
    }
+ 
+
+}
+
+@media screen and (max-width: 768px) {
+  
+   
+   
  
    .fotos-index {
      /* Caso prefiras que as fotos fiquem em uma única coluna */
      grid-template-columns: 1fr;
-     gap: 10px;
+     gap: 30px;
+   }
+
+   .fotos-index img {
+           margin-bottom: 10px;
+           display: block;
+           border-radius: 5px;
+
    }
    
    /* Se desejares que algumas fotos se alinhem de forma diferente,
@@ -139,8 +181,8 @@ img {
    .fotos-vert1 {
      width: 100%;
      margin: 0 auto;
-     text-align: center;
    }
+
    
    .fotos-hor p,
    .fotos-vert1 p {
