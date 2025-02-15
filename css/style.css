@@ -290,8 +290,8 @@ footer p {
    padding: 10px 15px;
    font-size: 30px;
    cursor: pointer;
-   margin-left: 100px;
-   margin-right: 100px;
+   margin-left: 50px;
+   margin-right: 50px;
 }
 
 #prev-btn:hover, #next-btn:hover {              
@@ -316,6 +316,8 @@ footer p {
        top: auto; /* Remove o posicionamento vertical */
        bottom: 40px; /* Posiciona as setas na parte inferior */
        transform: translateY(0); /* Remove o ajuste vertical */
+       margin-left: 100px;
+       margin-right: 100px;
    }
 
    #prev-btn {
@@ -334,8 +336,8 @@ footer p {
 
    /* Ajuste para o botão de fechar */
    #close-btn {
-       top: 10px;
-       right: 10px;
+       top: 50px;
+       right: 20px;
        font-size: 30px; /* Reduz o tamanho do botão de fechar */
    }
 }
