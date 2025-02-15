@@ -8,19 +8,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const imageGroups = {
         "grupo1": [
-            "img/fotos/002234_002234-R1-E001_1.jpg",
-            "img/fotos/002234_002234-R1-E002_1.jpg",
-            "img/fotos/002234_002234-R1-E003_1.jpg"
+            "img/fotos/delia/002234_002234-R1-E001_1.jpg",
+            "img/fotos/delia/002234_002234-R1-E002_1.jpg",
+            "img/fotos/delia/002234_002234-R1-E003_1.jpg"
         ],
         "grupo2": [
-            "img/IMG_2207-Aprimorado-NR.jpg",
-            "img/IMG_4678.jpg",
-            "img/IMG_0354.jpg"
+            "img/fotos/viola-poggio/IMG_2207-Aprimorado-NR.jpg",
+            "img/fotos/viola-poggio/IMG_2108.jpg"
+            
         ],
         "grupo3": [
-            "img/IMG_0676.jpg",
-            "img/IMG_0750.jpg",
-            "img/IMG_1652.jpg"
+            "img/fotos/fabrica-maria/IMG_1772.jpg",
+            "img/fotos/fabrica-maria/IMG_1773.jpg",
+            "img/fotos/fabrica-maria/IMG_1774.jpg",
+            "img/fotos/fabrica-maria/IMG_1775.jpg",
+            "img/fotos/fabrica-maria/IMG_1776.jpg"
         ]
     };
 
