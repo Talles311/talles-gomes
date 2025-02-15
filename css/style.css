@@ -257,3 +257,35 @@ img {
    border-radius: 10px;
    
 }
+
+
+/* Ajustes para o layout responsivo */
+@media (max-width: 768px) {
+   /* Posicionamento das setas nas extremidades da tela */
+   #prev-btn, #next-btn {
+       top: auto; /* Remove o posicionamento vertical */
+       bottom: 40px; /* Posiciona as setas na parte inferior */
+       transform: translateY(0); /* Remove o ajuste vertical */
+   }
+
+   #prev-btn {
+       left: -20px; /* Seta anterior à esquerda */
+   }
+
+   #next-btn {
+       right: -20px; /* Seta próxima à direita */
+   }
+
+   /* Ajuste para a imagem não ficar muito próxima das setas */
+   #expanded-img {
+       max-height: 70vh; /* Reduz um pouco a altura da imagem */
+       margin-bottom: 60px; /* Adiciona espaço abaixo da imagem para as setas */
+   }
+
+   /* Ajuste para o botão de fechar */
+   #close-btn {
+       top: 10px;
+       right: 10px;
+       font-size: 30px; /* Reduz o tamanho do botão de fechar */
+   }
+}

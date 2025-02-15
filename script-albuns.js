@@ -23,6 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/fabrica-maria/IMG_1775.jpg",
             "img/fotos/fabrica-maria/IMG_1776.jpg"
 
+        ],
+        "grupo4": [
+            "img/fotos/",
+            "img/fotos/",
+            "img/fotos/",
+            "img/fotos/",
+            "img/fotos/"
+
         ]
     };
 

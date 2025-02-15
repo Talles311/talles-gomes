@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         "grupo2": [
             "img/fotos/viola-poggio/IMG_2207-Aprimorado-NR.jpg",
             "img/fotos/viola-poggio/IMG_2108.jpg"
-            
         ],
         "grupo3": [
             "img/fotos/fabrica-maria/IMG_1772.jpg",
@@ -23,6 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/fabrica-maria/IMG_1774.jpg",
             "img/fotos/fabrica-maria/IMG_1775.jpg",
             "img/fotos/fabrica-maria/IMG_1776.jpg"
+
+        ],
+        "grupo4": [
+            "img/fotos/",
+            "img/fotos/",
+            "img/fotos/",
+            "img/fotos/",
+            "img/fotos/"
+
         ]
     };
 
