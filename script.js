@@ -24,12 +24,26 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/fabrica-maria/IMG_1776.jpg"
 
         ],
+        
         "grupo4": [
-            "img/fotos/",
-            "img/fotos/",
-            "img/fotos/",
-            "img/fotos/",
-            "img/fotos/"
+            "img/fotos/festival-england/IMG_0257.jpg",
+            "img/fotos/festival-england/IMG_0334.jpg",
+            "img/fotos/festival-england/IMG_0286.jpg",
+            "img/fotos/festival-england/IMG_0354.jpg",
+            "img/fotos/festival-england/IMG_0361.jpg",
+            "img/fotos/festival-england/IMG_0362.jpg"
+
+        ],
+
+        "grupo5": [
+            "img/fotos/rua-bro/IMG_4669.jpg",
+            "img/fotos/rua-bro/IMG_4678.jpg",
+            "img/fotos/rua-bro/IMG_4679.jpg",
+            "img/fotos/rua-bro/IMG_4681.jpg",
+            "img/fotos/rua-bro/IMG_4686.jpg",
+            "img/fotos/rua-bro/IMG_4689.jpg",
+            "img/fotos/rua-bro/IMG_4690.jpg",
+            "img/fotos/rua-bro/IMG_4695.webp"
 
         ]
     };

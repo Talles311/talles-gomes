@@ -24,12 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/fabrica-maria/IMG_1776.jpg"
 
         ],
+        
         "grupo4": [
-            "img/fotos/",
-            "img/fotos/",
-            "img/fotos/",
-            "img/fotos/",
-            "img/fotos/"
+            "img/fotos/festival-england/IMG_0257.jpg",
+            "img/fotos/festival-england/IMG_0334.jpg",
+            "img/fotos/festival-england/IMG_0286.jpg",
+            "img/fotos/festival-england/IMG_0354.jpg",
+            "img/fotos/festival-england/IMG_0361.jpg",
+            "img/fotos/festival-england/IMG_0362.jpg"
 
         ]
     };
