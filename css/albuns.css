@@ -5,6 +5,7 @@ body {
    height: 100vh;
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
+   background-color: #212121;
 }
 
 ul {
@@ -16,6 +17,7 @@ h1, p, ul {
    margin: 0;
    padding: 0;
 }
+
 
 a {
    color: inherit;
@@ -191,6 +193,9 @@ img {
       height: 100vh;
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
+      background-color: #212121;
+  
+     
    }
 
    .header {
@@ -291,28 +296,28 @@ img {
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
-   background: rgba(255, 255, 255, 0);
-   color: white;
-   border: none;
-   padding: 10px 15px;
-   font-size: 30px;
+   background: rgba(213, 213, 213, 0.968);
+   color: rgb(27, 27, 27);
+   padding: 15px 20px;
+   font-size: 20px;
    cursor: pointer;
    margin-left: 50px;
    margin-right: 50px;
+   border-radius: 100%;
 }
 
-#prev-btn:hover, #next-btn:hover {
-   font-size: 40px;
-   transition: 0.3s;
+#prev-btn:hover, #next-btn:hover {              
+   font-size: 30px;
+   transition: 0.4s;
+  
+   background: rgba(213, 213, 213, 0.968);
+   color: rgb(27, 27, 27);
 }  
 
 #prev-btn { left: 8px; }
 #next-btn { right: 8px; }
 
-#prev-btn:hover, #next-btn:hover {
-   background: rgba(255, 255, 255, 0.089);
-   border-radius: 10px;
-}
+
 
 
 /* Ajustes para o layout responsivo */

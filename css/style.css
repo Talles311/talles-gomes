@@ -116,9 +116,21 @@ img {
    margin: 0 auto;
 }
 
+.fotos-index p {
+       font-size: 0.8rem ; 
+
+}
+
+
 .fotos-vert1 {     
       grid-row: 1 / 3;
+      
    }  
+
+   .fotos-vert2 {     
+      grid-row: 4 / 6;
+      
+   } 
 
 .fotos-hor p {
    text-align: left;
@@ -155,47 +167,55 @@ footer p {
 
 @media screen and (max-width: 768px) {
   
-   
-   
- 
+   body {
+       background-color: #212121;
+
+   }
+
    .fotos-index {
      /* Caso prefiras que as fotos fiquem em uma única coluna */
      grid-template-columns: 1fr;
      gap: 30px;
    }
+ 
+   .fotos-index p {
+      font-size: 0.8rem ; 
+
+     }
+  
 
    .fotos-index img {
            margin-bottom: 10px;
            display: block;
            border-radius: 5px;
-
    }
    
    /* Se desejares que algumas fotos se alinhem de forma diferente,
       podes ajustar classes específicas */
-   .fotos-hor,
-   .fotos-vert1 {
-     width: 100%;
-     margin: 0 auto;
+   
+      .fotos-hor,
+      .fotos-vert1 {
+      width: 100%;
+      margin: 0 auto;
    }
 
    
    .fotos-hor p,
    .fotos-vert1 p {
-     font-size: 14px;
+     font-size: 0.7rem;
    }
 
    .footer p {
-      font-weight: normal;
-      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-      margin: 0 auto;
+     font-weight: normal;
+     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+     margin: 0 auto;
      display: flex;
      justify-content: center;
      align-items: center;
      box-sizing: border-box;
      background-color: #313131;
-      height: 50px;
-      color: #e9e9e9;
+     height: 50px;
+     color: #e9e9e9;
    
    }
 
