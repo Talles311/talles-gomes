@@ -7,17 +7,30 @@
   <link rel="stylesheet" href="css/albuns.css">
 </head>
 <body>
+ 
   <header class="header-bg">
     <div class="header">
-      <a href="index.html"><h1>Talles Gomes</h1></a>
-      <nav aria-label="primaria">
-        <ul class="header-menu">
-          <li><a href="album.html">Álbuns</a></li>
-          <li><a href="#">Sobre</a></li>
-        </ul>
-      </nav>
+       <a href="index.html"><h1>Talles Gomes</h1></a>
+       <nav aria-label="primaria">
+          <ul class="header-menu">
+             <li><a href="album.html">Albuns</a></li>
+             <li><a href="#">Sobre</a></li>
+          </ul>
+       </nav>
+       <div class="hamburger-menu" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+       </div>
     </div>    
-  </header>
+    <div class="mobile-menu">
+       <ul class="mobile-menu-list">
+          <li><a href="album.html">Albuns</a></li>
+          <li><a href="#">Sobre</a></li>
+       </ul>
+    </div>
+ </header>
+
 
   <main class="album-bg">
     <div class="album-container">
