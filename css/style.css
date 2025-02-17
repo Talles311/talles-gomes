@@ -189,9 +189,10 @@ footer p {
 
    
    .fotos-hor p,
-   .fotos-vert1 p {
-     font-size: 0.7rem;
+   .fotos-vert p {
+     font-size: 0.8rem;
    }
+
 
    .footer p {
      font-weight: normal;
