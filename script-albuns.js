@@ -33,23 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/festival-england/IMG_0361.jpg",
             "img/fotos/festival-england/IMG_0362.jpg"
 
-        ],
-
-        "grupo6": [
-            "img/fotos/analogica/002234_002234-R1-E005_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E007_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E008_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E009_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E010_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E011_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E013_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E014_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E015_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E021_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E025_1.jpg"
-
         ]
-
     };
 
     let currentIndex = 0;

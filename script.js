@@ -45,35 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/rua-bro/IMG_4690.jpg",
             "img/fotos/rua-bro/IMG_4695.webp"
 
-        ],
-       
-        "grupo6": [
-            "img/fotos/analogica/002234_002234-R1-E005_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E007_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E008_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E009_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E010_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E011_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E013_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E014_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E015_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E021_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E025_1.jpg"
-
-        ],
-       
-        "grupo7": [
-            "img/fotos/festa-india/IMG_0676.jpg",
-            "img/fotos/festa-india/IMG_0688.jpg",
-            "img/fotos/festa-india/IMG_0695.jpg",
-            "img/fotos/festa-india/IMG_0697.jpg",
-            "img/fotos/festa-india/IMG_0704.jpg",
-            "img/fotos/festa-india/IMG_0716.jpg",
-            "img/fotos/festa-india/IMG_0717.jpg",
-            "img/fotos/festa-india/IMG_0732.jpg",
-            "img/fotos/festa-india/IMG_0750.jpg",
-            "img/fotos/festa-india/IMG_0769.jpg"
-
         ]
     };
 
