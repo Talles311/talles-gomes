@@ -181,6 +181,11 @@ footer p {
      /* Caso prefiras que as fotos fiquem em uma única coluna */
      grid-template-columns: 1fr;
      gap: 30px;
+     
+    
+      padding: 20px;
+      margin-top: 20px;
+
    }
  
    .fotos-index p {
