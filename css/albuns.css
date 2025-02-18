@@ -362,7 +362,7 @@ img {
    height: 20px; /* Altura ajustada para ficar mais proporcional */
    justify-content: space-around;
    align-items: center; /* Centraliza as barras dentro do círculo */
-   border: 2px solid #333; /* Borda do círculo */
+   border: 1.5px solid #333; /* Borda do círculo */
    border-radius: 50%; /* Borda arredondada */
    padding: 4px; /* Ajustando o padding para um melhor encaixe */
 }
