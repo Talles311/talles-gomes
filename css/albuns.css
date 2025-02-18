@@ -300,9 +300,9 @@ img {
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
-   background: rgba(213, 213, 213, 0.968);
-   color: rgb(27, 27, 27);
-   padding: 15px 20px;
+   background: rgba(26, 25, 25, 0.968);
+   color: rgb(228, 228, 228);
+   padding: 12px 20px;
    font-size: 20px;
    cursor: pointer;
    margin-left: 50px;
@@ -311,11 +311,11 @@ img {
 }
 
 #prev-btn:hover, #next-btn:hover {              
-   font-size: 30px;
+   font-size: 20px;
    transition: 0.4s;
   
-   background: rgba(213, 213, 213, 0.968);
-   color: rgb(27, 27, 27);
+   background: rgba(37, 37, 37, 0.968);
+   color: rgb(226, 226, 226);
 }  
 
 #prev-btn { left: 8px; }
@@ -352,7 +352,7 @@ img {
    /* Ajuste para o botão de fechar */
    #close-btn {
        top: 50px;
-      right: 20px;
+       right: 20px;
        font-size: 30px; /* Reduz o tamanho do botão de fechar */
    }
 }
