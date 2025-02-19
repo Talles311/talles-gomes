@@ -56,13 +56,12 @@ img {
 .header h1 {
    font-size: 2rem;
    font-family: 'Open Sans';
+   margin-right: 10px;
 }
 
 .header-menu {
    display: flex;
    flex-wrap: wrap;
-   
-   gap: 10px;
 }
 
 
@@ -109,7 +108,7 @@ img {
 
 .fotos-index {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr ;
    gap: 15px;
    padding: 40px;
    color: white;

@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/delia/002234_002234-R1-E001_1.jpg",
             "img/fotos/delia/002234_002234-R1-E002_1.jpg",
             "img/fotos/delia/002234_002234-R1-E003_1.jpg"
+           
+
         ],
         "grupo2": [
             "img/fotos/viola-poggio/IMG_2207-Aprimorado-NR.jpg",
@@ -44,6 +46,23 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/rua-bro/IMG_4689.jpg",
             "img/fotos/rua-bro/IMG_4690.jpg",
             "img/fotos/rua-bro/IMG_4695.webp"
+
+        ],
+        
+        
+        "grupo6": [
+            "img/fotos/analogica/002234_002234-R1-E010_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E005_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E007_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E008_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E009_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E011_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E013_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E014_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E015_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E021_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E024_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E025_1.jpg"
 
         ]
     };
