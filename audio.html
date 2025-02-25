@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de áudios de gravações de foley">
+    <title>Foley Audio Project</title>
+    <link rel="stylesheet" href="css/audio.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+           <a href="index.html"><h1>Talles Gomes</h1></a>
+           <nav aria-label="primaria">
+              <ul class="header-menu">
+                 <li><a href="album.html">Albuns</a></li>
+                 <li><a href="#">Sobre</a></li>
+                 <li><a href="audio.html">Audio</a></li>
+              </ul>
+           </nav>
+           <div class="hamburger-menu" onclick="toggleMenu()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+           </div>
+        </div>    
+       
+        <div class="mobile-menu">
+           <ul class="mobile-menu-list">
+              <li><a href="album.html">Albuns</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Audio</a></li>
+           </ul>
+        </div>
+   </header>
+
+        <section class="audio-section">
+            <h2>Áudios de Foley</h2>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="audio/gravacao1.mp3" type="audio/mp3">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <p>Gravação 1: Passos na neve</p>
+            </div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="audio/gravacao2.mp3" type="audio/mp3">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <p>Gravação 2: Batida de porta</p>
+            </div>
+
+            <h2>Áudios de Foley</h2>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="audio/gravacao1.mp3" type="audio/mp3">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <p>Gravação 1: Passos na neve</p>
+            </div>
+            
+            <!-- Adicione mais áudios conforme necessário -->
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Foley Audio Project</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* Resetando margens e preenchimento padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container centralizado */
+.container {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Estilo da seção de áudio */
+.audio-section {
+    margin-top: 40px;
+}
+
+.audio-player {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+audio {
+    width: 100%;
+    outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #333;
+    border-radius: 8px;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #fff;
+}
+
+.audio-player p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #999;
+}
