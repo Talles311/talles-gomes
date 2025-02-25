@@ -8,37 +8,39 @@
     <link rel="stylesheet" href="css/audio.css">
 </head>
 <body>
-    <div class="container">
-      <header class="header-bg">   
-        <div class="header">
-           <a href="index.html"><h1>Talles Gomes</h1></a>
-           <nav aria-label="primaria">
-              <ul class="header-menu">
-                 <li><a href="album.html">Albuns</a></li>
-                 <li><a href="#">Sobre</a></li>
-                 <li><a href="audio.html">Audio</a></li>
-              </ul>
-           </nav>
-           <div class="hamburger-menu" onclick="toggleMenu()">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-           </div>
-        </div>    
-       
-        <div class="mobile-menu">
-           <ul class="mobile-menu-list">
-              <li><a href="album.html">Albuns</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="/audio.html">Audio</a></li>
-           </ul>
-        </div>
-    </header>
-
+    
+    
+    <!-- Header -->
+  <header class="header-bg">
+    <div class="container header">
+      <h1><a href="index.html">Talles Gomes</a></h1>
+      <nav aria-label="Navegação principal">
+        <ul class="header-menu">
+          <li><a href="album.html">Álbuns</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="audio.html">Áudios</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger-menu" aria-label="Menu de navegação" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" aria-hidden="true">
+      <ul class="mobile-menu-list">
+        <li><a href="album.html">Álbuns</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="audio.html">Áudios</a></li>
+      </ul>
+    </div>
+  </header>
+    
+
         <section class="audio-container">
+           
             <h2 class="titulo-audio">Áudios</h2>
             
             <div class="audio-section">

@@ -2,10 +2,11 @@
 /*configurações gerais*/
 
 body {
-   height: 100vh;
-   margin: 0;
+   padding: 0px;
+   margin: 0 auto;
    font-family: Arial, Helvetica, sans-serif;
-   background-color: #212121;
+   height: 100vh;
+
 }
 
 ul {
@@ -17,7 +18,6 @@ h1, p, ul {
    margin: 0;
    padding: 0;
 }
-
 
 a {
    color: inherit;
@@ -31,6 +31,8 @@ img {
    margin-bottom: 5px;
    cursor: pointer;
 }
+
+
 
 
 /*configuração header*/
@@ -54,13 +56,13 @@ img {
 .header h1 {
    font-size: 2rem;
    font-family: 'Open Sans';
+   margin-right: 10px;
 }
 
 .header-menu {
    display: flex;
    flex-wrap: wrap;
 }
-
 
 
 /*-----------------------------------------------------------------------------*/
@@ -92,6 +94,9 @@ img {
    width: 100%;  /* Expande até o tamanho total */
    left: 0;  /* Move para a esquerda */
 }
+
+
+
 
 /* Estilo dos álbuns */
 .album-container {
@@ -367,20 +372,20 @@ img {
    display: none;  /* Inicialmente escondido */
    flex-direction: column;
    cursor: pointer;
-   width: 20px; /* Largura ajustada para ficar mais proporcional */
-   height: 20px; /* Altura ajustada para ficar mais proporcional */
+   width: 30px; /* Largura ajustada para ficar mais proporcional */
+   height: 30px; /* Altura ajustada para ficar mais proporcional */
    justify-content: space-around;
    align-items: center; /* Centraliza as barras dentro do círculo */
-   border: 1.5px solid #333; /* Borda do círculo */
+   border: 1.6px solid #333; /* Borda do círculo */
    border-radius: 50%; /* Borda arredondada */
-   padding: 4px; /* Ajustando o padding para um melhor encaixe */
+   padding: 5px; /* Ajustando o padding para um melhor encaixe */
 }
 
 .hamburger-menu .bar {
    width: 15px; /* Largura das barras ajustada */
-   height: 3px; /* Altura das barras */
+   height: 1.8px; /* Altura das barras */
    background-color: #333;
-   border-radius: 5px;
+
 }
 
 /* Ajustando o H1 */

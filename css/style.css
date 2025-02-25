@@ -241,7 +241,6 @@ footer p {
        
     display: flex;
     flex-wrap: wrap;
-    
     gap: 5px;
 
    }
@@ -327,11 +326,8 @@ footer p {
 #next-btn { right: 8px; }
 
 
-
-
-
-
 /* Ajustes para o layout responsivo */
+
 @media (max-width: 768px) {
    /* Posicionamento das setas nas extremidades da tela */
    #prev-btn, #next-btn {
@@ -371,20 +367,20 @@ footer p {
    display: none;  /* Inicialmente escondido */
    flex-direction: column;
    cursor: pointer;
-   width: 20px; /* Largura ajustada para ficar mais proporcional */
-   height: 20px; /* Altura ajustada para ficar mais proporcional */
+   width: 30px; /* Largura ajustada para ficar mais proporcional */
+   height: 30px; /* Altura ajustada para ficar mais proporcional */
    justify-content: space-around;
    align-items: center; /* Centraliza as barras dentro do círculo */
-   border: 1.5px solid #333; /* Borda do círculo */
+   border: 1.6px solid #333; /* Borda do círculo */
    border-radius: 50%; /* Borda arredondada */
-   padding: 4px; /* Ajustando o padding para um melhor encaixe */
+   padding: 5px; /* Ajustando o padding para um melhor encaixe */
 }
 
 .hamburger-menu .bar {
    width: 15px; /* Largura das barras ajustada */
-   height: 3px; /* Altura das barras */
+   height: 1.8px; /* Altura das barras */
    background-color: #333;
-   border-radius: 5px;
+
 }
 
 /* Ajustando o H1 */

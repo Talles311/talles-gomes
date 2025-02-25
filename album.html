@@ -9,44 +9,44 @@
 </head>
 <body>
  
-  <div class="container">
-    <header class="header-bg">
-     <div class="header">
-      <a href="index.html"><h1>Talles Gomes</h1></a>
-      <nav aria-label="primaria">
-         <ul class="header-menu">
-            <li><a href="album.html">Albuns</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="audio.html">Audio</a></li>
-         </ul>
+  <!-- Header -->
+  <header class="header-bg">
+    <div class="container header">
+      <h1><a href="index.html">Talles Gomes</a></h1>
+      <nav aria-label="Navegação principal">
+        <ul class="header-menu">
+          <li><a href="album.html">Álbuns</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="audio.html">Áudios</a></li>
+        </ul>
       </nav>
-      <div class="hamburger-menu" onclick="toggleMenu()">
-         <span class="bar"></span>
-         <span class="bar"></span>
-         <span class="bar"></span>
-         <span class="bar"></span>
-      </div>
-     </div>    
-    
-     <div class="mobile-menu">
+      <button class="hamburger-menu" aria-label="Menu de navegação" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" aria-hidden="true">
       <ul class="mobile-menu-list">
-         <li><a href="album.html">Albuns</a></li>
-         <li><a href="#">Sobre</a></li>
-         <li><a href="/audio.html">Audio</a></li>
+        <li><a href="album.html">Álbuns</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="audio.html">Áudios</a></li>
       </ul>
-     </div>
-    </header>
-  </div>
+    </div>
+  </header>
+
 
 
 
   <main class="album-bg">
-    
-    
-    <div class="album-container">
+
+     <div class="album-container">
       <!-- Card 1 -->
       
       <div class="album-card" data-group="grupo1">
+       
         <div class="album-img">
             <img src="img/fotos/delia/002234_002234-R1-E001_1.jpg" alt="Foto do Álbum 1"  data-group="grupo1" class="album-slide-img">
         </div>
