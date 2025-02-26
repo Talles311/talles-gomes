@@ -186,6 +186,44 @@ audio {
  }
 
 
+/*Configurações menu para telemóvel*/
+
+
+.menu-open .audio-container,
+.menu-open footer {
+    display: none;
+}
+
+/* Impede a rolagem quando o menu está aberto */
+.menu-open {
+    overflow: hidden;
+}
+
+/* Ajuste para garantir que o menu cubra toda a tela */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #e9e9e9;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+/* Quando o menu está ativo, ele aparece */
+.mobile-menu.active {
+    display: flex;
+}
+
+
+
+
+
+
 /* Responsividade para telas menores */
 @media screen and (max-width: 600px) {
    body{
