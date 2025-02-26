@@ -2,68 +2,68 @@
 /*configurações gerais*/
 
 body {
-    padding: 0px;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
- 
- }
- 
- ul {
-    list-style: none;
-    padding: 0;
- }
- 
- h1, p, ul {
-    margin: 0;
-    padding: 0;
- }
- 
- a {
-    color: inherit;
-    text-decoration: none;
- }
- 
- img {
-    max-width: 100%;
-    display: block;
-    border-radius: 4px;
-    margin-bottom: 5px;
-    cursor: pointer;
- }
- 
- 
- 
- 
- /*configuração header*/
- 
- .header-bg {
-    background-color: #F8F8F8;
- }
- 
- .header {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #e9e9e9;
-    padding: 20px 10px 20px 10px;
-    gap: 8px;
-    align-items: flex-end;
-    font-weight: normal;
-    box-sizing: border-box;
-    width: 100%;
- }
- 
- .header h1 {
-    font-size: 2rem;
-    font-family: 'Open Sans';
-    margin-right: 10px;
- }
- 
- .header-menu {
-    display: flex;
-    flex-wrap: wrap;
- }
- 
- 
+   padding: 0px;
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+   height: 100vh;
+
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+
+h1, p, ul {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+   border-radius: 4px;
+   margin-bottom: 5px;
+   cursor: pointer;
+}
+
+
+
+
+/*configuração header*/
+
+.header-bg {
+   background-color: #F8F8F8;
+}
+
+.header {
+   display: flex;
+   flex-wrap: wrap;
+   background-color: #e9e9e9;
+   padding: 20px 10px 20px 10px;
+   gap: 8px;
+   align-items: flex-end;
+   font-weight: normal;
+   box-sizing: border-box;
+   width: 100%;
+}
+
+.header h1 {
+   font-size: 2rem;
+   font-family: 'Open Sans';
+   margin-right: 10px;
+}
+
+.header-menu {
+   display: flex;
+   flex-wrap: wrap;
+}
+
  
  /*-----------------------------------------------------------------------------*/
  
@@ -101,40 +101,41 @@ body {
  
  /*corpo*/
  
+ .corpo-bg {
+   background-color: rgba(0, 0, 0, 0.87);
+}
+   
 .audio-container {
-          margin-right: auto;
-          margin-left: auto;
-          text-align: center;
-          height: 100vh;
+         justify-items: center;
+         height: 100vh;
 }
 
-.audio-section {
-           
-           padding-left: 20px;
-           padding-right: 20px;
+ .audio-section {
+          justify-content: center;
 
-}
-
- 
- footer p {
-   font-weight: normal;
-   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: #212121;
- height: 50px;
- color: #e9e9e9;
- 
  }
 
+ 
+footer p {
+        font-weight: normal;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       box-sizing: border-box;
+       background-color: #212121;
+      height: 50px;
+      color: #e9e9e9;
+
+}
 
 
-/* configuração Audio */
 
-/* Remover cantos arredondados do player de áudio */
+
+/* configuração player Audio */
+
+
 /* Estilizar o player de áudio */
 .audio-player {
    display: flex;
@@ -143,17 +144,16 @@ body {
    border: none;
    border-radius: 0  ; /* Removendo cantos arredondados */
   
-
-   
 }
 
 /* Garantir que os controles do player também tenham cantos quadrados */
 audio {
-  
    border-radius: 0;
+
 }
 
 /* Personalizar os botões do player */
+
 .audio-player button {
    background-color: #e2e2e2;
    color: white;
@@ -168,6 +168,7 @@ audio {
    background-color: #252525;
 }
 
+
 /* Garantir que os players fiquem lado a lado */
 .audio-section {
    display: flex;
@@ -176,9 +177,6 @@ audio {
    padding-bottom: 100px;
    
 }
-
-
-
 
 /*Configurações menu para telemóvel*/
 
@@ -217,85 +215,35 @@ audio {
 
 
 
-
-/* Responsividade para telas menores */
-@media screen and (max-width: 600px) {
-   body{
-      background-color: #ffffff;
- 
-    }
-    
-   
-
-    .audio-section {
-        flex-direction: column; /* Empilhar os players verticalmente */
-        align-items: center; /* Centralizar os players */
-        margin-top: 30px;
-    }
-    .audio-player {
-        max-width: 100%; /* Ajustar o tamanho ao contêiner */
-     
-    }
-
-    .audio-player p {
-          display: none;
-       
-    } 
- 
-    .audio-container {
-       
-        margin-right: auto;
-          margin-left: auto;
-          text-align: center;
-          
-        background-color: #e2e2e2;
-    }
- 
-    .audio-container h2 {
-       display: inline;
- }
-
- footer p {
-   font-weight: normal;
-   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: #212121;
- height: 50px;
- color: #e9e9e9;
- 
- }
-
- 
- }
-
 @media screen and (max-width: 768px) {
-   body{
+  body{
      background-color: #ffffff;
 
    }
-   
+  
+   .header {
+      align-items: center;  
+      justify-content: space-around;
+  }
+
    .audio-section {
+       display: flex;
        flex-direction: column; /* Empilhar os players verticalmente */
        align-items: center; /* Centralizar os players */
        margin-top: 30px;
    }
+
    .audio-player {
        max-width: 100%; /* Ajustar o tamanho ao contêiner */
       
    }
 
    .audio-container {
-     
-      margin-right: auto;
-      margin-left: auto;
       text-align: center;
-      
-    background-color: #e2e2e2;
-       background-color: #e2e2e2;
+     background-color: #e2e2e2;
+     justify-items: center;
+         height: 100vh;
+
    }
 
    .audio-container h2 {
@@ -320,129 +268,39 @@ footer p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Responsividade para telas menores */
+@media screen and (max-width: 600px) {
+   body{
+      background-color: #ffffff;
  
- /* Ajustes para telas com largura até 768px */
- 
- 
- 
- @media screen and (max-width: 768px) {
-   
-    .header {
-       align-items: center;  
-       justify-content: space-around;
-   }
- 
-    body {
-        background-color: #212121;
- 
-    }
- 
-    .fotos-index {
-      /* Caso prefiras que as fotos fiquem em uma única coluna */
-      grid-template-columns: 1fr;
-      gap: 30px;
-       padding: 20px;
-       margin-top: 20px;
- 
-    }
-  
-    .fotos-index p {
-       font-size: 0.8rem ; 
- 
-      }
-   
- 
-    .fotos-index img {
-            margin-bottom: 10px;
-            display: block;
-            border-radius: 5px;
     }
     
-    /* Se desejares que algumas fotos se alinhem de forma diferente,
-       podes ajustar classes específicas */
-    
-       .fotos-hor,
-       .fotos-vert1 {
-       width: 100%;
-       margin: 0 auto;
-    }
- 
-    
-    .fotos-hor p,
-    .fotos-vert1 p {
-      font-size: 0.7rem;
-    }
- 
-    .footer p {
-      font-weight: normal;
-      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
-      background-color: #313131;
-      height: 50px;
-      color: #e9e9e9;
-    
-    }
- 
-  }
- 
- /* Ajustes para telas com largura até 400px */
- 
-  @media screen and (max-width: 400px) {
-    .header {
-       align-items: center;  
-       justify-content: space-around;
-   }
- 
-   .header h1 {
-         align-self: center;
-         text-align: center;
-         font-size: 1.3rem;
-   }
- 
-    .header-menu {
-        
-     display: flex;
-     flex-wrap: wrap;
+    .audio-player {
+        max-width: 100%; /* Ajustar o tamanho ao contêiner */
      
-     gap: 5px;
- 
     }
+
+    .audio-player p {
+          display: none;
+       
+    } 
  
-    .footer p {
-       font-weight: normal;
-       font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-       margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
-      background-color: #313131;
-       height: 50px;
-       color: #e9e9e9;
-    
-    }
-  
+ footer p {
+   font-weight: normal;
+   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+ 
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #212121;
+ height: 50px;
+ color: #e9e9e9;
+ 
  }
+
  
- 
+ }
+
+
  
  /*-------------------------------------------------------------------------------*/
  
