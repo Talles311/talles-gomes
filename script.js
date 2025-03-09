@@ -67,8 +67,12 @@ document.addEventListener('DOMContentLoaded', function() {
         ]
     };
 
-    let currentIndex = 0;
+
+     let currentIndex = 0;
     let currentGroup = [];
+    let currentAlt = "";
+    let touchStartX = 0;
+    let touchEndX = 0;
 
     images.forEach(img => {
         img.addEventListener('click', function() {
@@ -98,23 +102,46 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    prevBtn.addEventListener('click', function() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            expandedImg.src = currentGroup[currentIndex];
-        }
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
+        updateExpandedImage();
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % currentGroup.length;
+        updateExpandedImage();
+    }
+
+    prevBtn.addEventListener('click', prevImage); // Chama a função
+    nextBtn.addEventListener('click', nextImage); // Chama a função
+
+
+    //  --- Código para Swipe (touch events) ---
+    expandedImg.addEventListener('touchstart', function(event) {
+        touchStartX = event.changedTouches[0].screenX;
     });
 
-    nextBtn.addEventListener('click', function() {
-        if (currentIndex < currentGroup.length - 1) {
-            currentIndex++;
-            expandedImg.src = currentGroup[currentIndex];
-        }
+    expandedImg.addEventListener('touchend', function(event) {
+        touchEndX = event.changedTouches[0].screenX;
+        handleSwipe();
     });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX) {
+            nextImage(); // Chama nextImage para o swipe à esquerda
+        } else if (touchEndX > touchStartX) {
+            prevImage(); // Chama prevImage para o swipe à direita
+        }
+    }
+    // --- Fim do código para Swipe ---
+
+    function updateExpandedImage() {
+        expandedImg.src = currentGroup[currentIndex];
+        expandedImg.alt = currentAlt; // Atualiza o atributo alt
+    }
 });
 
 function toggleMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
     mobileMenu.classList.toggle('active');
- }
- 
+}
