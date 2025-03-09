@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const images = document.querySelectorAll('.fotos-img');
     const overlay = document.getElementById('overlay');
     const expandedImg = document.getElementById('expanded-img');
@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/delia/002234_002234-R1-E001_1.jpg",
             "img/fotos/delia/002234_002234-R1-E002_1.jpg",
             "img/fotos/delia/002234_002234-R1-E003_1.jpg"
-           
-
         ],
         "grupo2": [
             "img/fotos/viola-poggio/IMG_2207-Aprimorado-NR.jpg",
@@ -67,38 +65,53 @@ document.addEventListener('DOMContentLoaded', function() {
         ]
     };
 
-
-     let currentIndex = 0;
+    let currentIndex = 0;
     let currentGroup = [];
-    let currentAlt = "";
     let touchStartX = 0;
     let touchEndX = 0;
+    let leftArrow;
+    let rightArrow;
 
     images.forEach(img => {
-        img.addEventListener('click', function() {
+        img.addEventListener('click', function () {
             const groupKey = this.dataset.group;
             currentGroup = imageGroups[groupKey] || [this.src];
             currentIndex = 0;
 
             expandedImg.src = currentGroup[currentIndex];
             overlay.style.display = 'flex';
-            setTimeout(() => overlay.classList.add('active'), 10);
+
+            setTimeout(() => {
+                overlay.classList.add('active');
+
+                if (window.innerWidth <= 768 && !leftArrow) {
+                    leftArrow = document.createElement('div');
+                    leftArrow.id = 'left-arrow';
+                    leftArrow.innerHTML = '❮';
+                    overlay.appendChild(leftArrow);
+                    leftArrow.addEventListener('click', prevImage);
+
+                    rightArrow = document.createElement('div');
+                    rightArrow.id = 'right-arrow';
+                    rightArrow.innerHTML = '❯';
+                    overlay.appendChild(rightArrow);
+                    rightArrow.addEventListener('click', nextImage);
+                }
+
+                updateArrows();
+            }, 10);
         });
     });
 
-    closeBtn.addEventListener('click', function() {
+    closeBtn.addEventListener('click', function () {
         overlay.classList.remove('active');
-        setTimeout(() => {
-            overlay.style.display = 'none';
-        }, 300);
+        setTimeout(() => overlay.style.display = 'none', 300);
     });
 
-    overlay.addEventListener('click', function(event) {
+    overlay.addEventListener('click', function (event) {
         if (event.target === overlay) {
             overlay.classList.remove('active');
-            setTimeout(() => {
-                overlay.style.display = 'none';
-            }, 300);
+            setTimeout(() => overlay.style.display = 'none', 300);
         }
     });
 
@@ -112,36 +125,43 @@ document.addEventListener('DOMContentLoaded', function() {
         updateExpandedImage();
     }
 
-    prevBtn.addEventListener('click', prevImage); // Chama a função
-    nextBtn.addEventListener('click', nextImage); // Chama a função
+    prevBtn.addEventListener('click', prevImage);
+    nextBtn.addEventListener('click', nextImage);
 
-
-    //  --- Código para Swipe (touch events) ---
-
-    
-    expandedImg.addEventListener('touchstart', function(event) {
+    expandedImg.addEventListener('touchstart', function (event) {
         touchStartX = event.changedTouches[0].screenX;
     });
 
-    expandedImg.addEventListener('touchend', function(event) {
+    expandedImg.addEventListener('touchend', function (event) {
         touchEndX = event.changedTouches[0].screenX;
         handleSwipe();
     });
 
     function handleSwipe() {
         if (touchEndX < touchStartX) {
-            nextImage(); // Chama nextImage para o swipe à esquerda
+            nextImage();
         } else if (touchEndX > touchStartX) {
-            prevImage(); // Chama prevImage para o swipe à direita
+            prevImage();
         }
     }
 
-
-    // --- Fim do código para Swipe ---
-
     function updateExpandedImage() {
         expandedImg.src = currentGroup[currentIndex];
-        expandedImg.alt = currentAlt; // Atualiza o atributo alt
+        updateArrows();
+    }
+
+    function updateArrows() {
+        if (!leftArrow || !rightArrow) return;
+
+        if (window.innerWidth <= 768) {
+            if (currentGroup.length > 1) {
+                leftArrow.style.display = currentIndex > 0 ? 'block' : 'none';
+                rightArrow.style.display = currentIndex < currentGroup.length - 1 ? 'block' : 'none';
+            } else {
+                leftArrow.style.display = 'none';
+                rightArrow.style.display = 'none';
+            }
+        }
     }
 });
 
