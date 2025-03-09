@@ -117,6 +117,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     //  --- Código para Swipe (touch events) ---
+
+    
     expandedImg.addEventListener('touchstart', function(event) {
         touchStartX = event.changedTouches[0].screenX;
     });
@@ -133,6 +135,8 @@ document.addEventListener('DOMContentLoaded', function() {
             prevImage(); // Chama prevImage para o swipe à direita
         }
     }
+
+
     // --- Fim do código para Swipe ---
 
     function updateExpandedImage() {
