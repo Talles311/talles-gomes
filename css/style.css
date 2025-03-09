@@ -220,6 +220,19 @@ footer p {
    
    }
 
+   .header-menu {
+      display: none; /* Esconde o menu tradicional */
+   }
+
+   .hamburger-menu {
+      display: flex;  /* Exibe o ícone do hambúrguer */
+   }
+
+   .mobile-menu.active {
+      display: block;  /* Exibe o menu quando ativo */
+   }
+
+
  }
 
 /* Ajustes para telas com largura até 400px */
@@ -419,16 +432,3 @@ footer p {
    text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-   .header-menu {
-      display: none; /* Esconde o menu tradicional */
-   }
-
-   .hamburger-menu {
-      display: flex;  /* Exibe o ícone do hambúrguer */
-   }
-
-   .mobile-menu.active {
-      display: block;  /* Exibe o menu quando ativo */
-   }
-}
