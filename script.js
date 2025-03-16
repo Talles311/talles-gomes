@@ -58,9 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
             "img/fotos/analogica/002234_002234-R1-E013_1.jpg",
             "img/fotos/analogica/002234_002234-R1-E014_1.jpg",
             "img/fotos/analogica/002234_002234-R1-E015_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E019_1.jpg",
             "img/fotos/analogica/002234_002234-R1-E021_1.jpg",
             "img/fotos/analogica/002234_002234-R1-E024_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E025_1.jpg"
+            "img/fotos/analogica/002234_002234-R1-E025_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E026_1.jpg"
 
         ]
     };
