@@ -38,6 +38,7 @@ img {
 /*configuração header*/
 
 .header-bg {
+  
    background-color: #F8F8F8;
 }
 
@@ -108,13 +109,8 @@ img {
    
 .audio-container {
          justify-items: center;
-         
-        
-         
          padding-bottom: 100px;
-        
          min-height: 100vh;
-
          text-align: center;
          background-color: #ffffff;
          justify-items: center;
@@ -128,11 +124,13 @@ img {
 
 
  .audio-section {
-          
-          display: flex;
+        
+         background-color: #333;
+         padding: 20px;
+         display: flex;
          flex-wrap: wrap;
-          gap: 20px;
-          justify-content: center;
+         gap: 40px;
+         justify-content: center;
 
  }
 
@@ -164,6 +162,7 @@ footer p {
    background-color: #f1f1f1;
    border: none;
    border-radius: 0  ; /* Removendo cantos arredondados */
+   width: 100wh;
   
 }
 
@@ -179,7 +178,6 @@ audio {
    background-color: #e2e2e2;
    color: white;
    border: none;
-
    cursor: pointer;
    border-radius: 0; /* Cantos quadrados */
    transition: background-color 0.3s ease-in-out;
