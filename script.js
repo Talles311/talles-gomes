@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const images = document.querySelectorAll('.fotos-img');
     const overlay = document.getElementById('overlay');
     const expandedImg = document.getElementById('expanded-img');
@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/delia/002234_002234-R1-E001_1.jpg",
             "img/fotos/delia/002234_002234-R1-E002_1.jpg",
             "img/fotos/delia/002234_002234-R1-E003_1.jpg"
-           
-
         ],
         "grupo2": [
             "img/fotos/viola-poggio/IMG_2207-Aprimorado-NR.jpg",
@@ -60,61 +58,116 @@ document.addEventListener('DOMContentLoaded', function() {
             "img/fotos/analogica/002234_002234-R1-E013_1.jpg",
             "img/fotos/analogica/002234_002234-R1-E014_1.jpg",
             "img/fotos/analogica/002234_002234-R1-E015_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E019_1.jpg",
             "img/fotos/analogica/002234_002234-R1-E021_1.jpg",
             "img/fotos/analogica/002234_002234-R1-E024_1.jpg",
-            "img/fotos/analogica/002234_002234-R1-E025_1.jpg"
+            "img/fotos/analogica/002234_002234-R1-E025_1.jpg",
+            "img/fotos/analogica/002234_002234-R1-E026_1.jpg"
 
         ]
     };
 
     let currentIndex = 0;
     let currentGroup = [];
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let leftArrow;
+    let rightArrow;
 
     images.forEach(img => {
-        img.addEventListener('click', function() {
+        img.addEventListener('click', function () {
             const groupKey = this.dataset.group;
             currentGroup = imageGroups[groupKey] || [this.src];
             currentIndex = 0;
 
             expandedImg.src = currentGroup[currentIndex];
             overlay.style.display = 'flex';
-            setTimeout(() => overlay.classList.add('active'), 10);
+
+            setTimeout(() => {
+                overlay.classList.add('active');
+
+                if (window.innerWidth <= 768 && !leftArrow) {
+                    leftArrow = document.createElement('div');
+                    leftArrow.id = 'left-arrow';
+                    leftArrow.innerHTML = '❮';
+                    overlay.appendChild(leftArrow);
+                    leftArrow.addEventListener('click', prevImage);
+
+                    rightArrow = document.createElement('div');
+                    rightArrow.id = 'right-arrow';
+                    rightArrow.innerHTML = '❯';
+                    overlay.appendChild(rightArrow);
+                    rightArrow.addEventListener('click', nextImage);
+                }
+
+                updateArrows();
+            }, 10);
         });
     });
 
-    closeBtn.addEventListener('click', function() {
+    closeBtn.addEventListener('click', function () {
         overlay.classList.remove('active');
-        setTimeout(() => {
-            overlay.style.display = 'none';
-        }, 300);
+        setTimeout(() => overlay.style.display = 'none', 300);
     });
 
-    overlay.addEventListener('click', function(event) {
+    overlay.addEventListener('click', function (event) {
         if (event.target === overlay) {
             overlay.classList.remove('active');
-            setTimeout(() => {
-                overlay.style.display = 'none';
-            }, 300);
+            setTimeout(() => overlay.style.display = 'none', 300);
         }
     });
 
-    prevBtn.addEventListener('click', function() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            expandedImg.src = currentGroup[currentIndex];
-        }
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
+        updateExpandedImage();
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % currentGroup.length;
+        updateExpandedImage();
+    }
+
+    prevBtn.addEventListener('click', prevImage);
+    nextBtn.addEventListener('click', nextImage);
+
+    expandedImg.addEventListener('touchstart', function (event) {
+        touchStartX = event.changedTouches[0].screenX;
     });
 
-    nextBtn.addEventListener('click', function() {
-        if (currentIndex < currentGroup.length - 1) {
-            currentIndex++;
-            expandedImg.src = currentGroup[currentIndex];
-        }
+    expandedImg.addEventListener('touchend', function (event) {
+        touchEndX = event.changedTouches[0].screenX;
+        handleSwipe();
     });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX) {
+            nextImage();
+        } else if (touchEndX > touchStartX) {
+            prevImage();
+        }
+    }
+
+    function updateExpandedImage() {
+        expandedImg.src = currentGroup[currentIndex];
+        updateArrows();
+    }
+
+    function updateArrows() {
+        if (!leftArrow || !rightArrow) return;
+
+        if (window.innerWidth <= 768) {
+            if (currentGroup.length > 1) {
+                leftArrow.style.display = currentIndex > 0 ? 'block' : 'none';
+                rightArrow.style.display = currentIndex < currentGroup.length - 1 ? 'block' : 'none';
+            } else {
+                leftArrow.style.display = 'none';
+                rightArrow.style.display = 'none';
+            }
+        }
+    }
 });
 
 function toggleMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
     mobileMenu.classList.toggle('active');
- }
- 
+}
